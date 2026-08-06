@@ -35,9 +35,7 @@ jobs:
           python scripts/fetch_contributions.py --username "${{ github.repository_owner }}"
           python scripts/render_heatmap_svg.py
           python scripts/make_info_card.py
-          if [ -f "data/source-prepped.png" ]; then
-            python scripts/make_ascii_svg.py
-          fi
+          python scripts/make_tech_stack_svg.py
 
       - name: Commit and Push Changes
         run: |

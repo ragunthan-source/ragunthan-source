@@ -12,10 +12,10 @@ from PIL import Image, ImageDraw, ImageFont
 def render_preview_png():
     print("[+] Rendering preview screenshot assets/preview.png...")
     width = 1000
-    height = 1100
-    bg_color = (13, 17, 23)  # #0d1117 GitHub Dark / Terminal Black
-    card_bg = (22, 27, 34)   # #161b22
-    border_color = (48, 54, 61) # #30363d
+    height = 920
+    bg_color = (13, 17, 23)      # #0d1117 Terminal Black
+    card_bg = (22, 27, 34)       # #161b22
+    border_color = (48, 54, 61)  # #30363d
     text_white = (240, 246, 252)
     text_gray = (139, 148, 158)
     text_blue = (88, 166, 255)
@@ -24,15 +24,15 @@ def render_preview_png():
     img = Image.new("RGB", (width, height), bg_color)
     draw = ImageDraw.Draw(img)
 
-    # Attempt to load monospace font
     font_family = "consola.ttf"
     try:
         font_prompt = ImageFont.truetype(font_family, 15)
         font_header = ImageFont.truetype(font_family, 13)
         font_body = ImageFont.truetype(font_family, 12)
+        font_bold = ImageFont.truetype(font_family, 12)
         font_large = ImageFont.truetype(font_family, 18)
     except IOError:
-        font_prompt = font_header = font_body = font_large = ImageFont.load_default()
+        font_prompt = font_header = font_body = font_bold = font_large = ImageFont.load_default()
 
     # Draw Section 1: Prompt 1
     y = 30
@@ -63,7 +63,7 @@ def render_preview_png():
     draw.text((740, y + 45), "3 Commits", fill=text_green, font=font_large)
     draw.text((740, y + 68), "BEST DAY", fill=text_gray, font=font_body)
 
-    # Grid squares simulation in preview
+    # Grid squares simulation
     grid_start_x = 80
     grid_start_y = y + 105
     for c in range(52):
@@ -83,23 +83,39 @@ def render_preview_png():
     y += heatmap_h + 40
     draw.text((50, y), "ragunthan@github:~$ whoami", fill=text_blue, font=font_prompt)
 
-    # Two columns: ASCII Portrait & Neofetch Card
+    # Two columns: Tech Stack Card (Left) & Neofetch Card (Right)
     y += 35
     col_w = 435
-    col_h = 600
+    col_h = 440
     
-    # Left Column: ASCII Portrait
+    # Left Column: Tech Stack Card
     left_x = 50
     draw.rounded_rectangle([left_x, y, left_x + col_w, y + col_h], radius=8, fill=card_bg, outline=border_color, width=2)
     draw.ellipse([left_x + 15, y + 12, left_x + 25, y + 22], fill=(255, 95, 86))
     draw.ellipse([left_x + 32, y + 12, left_x + 42, y + 22], fill=(255, 189, 46))
     draw.ellipse([left_x + 49, y + 12, left_x + 59, y + 22], fill=(27, 201, 63))
-    draw.text((left_x + 140, y + 10), "ragunthan@github: ~/ascii-portrait", fill=text_gray, font=font_header)
+    draw.text((left_x + 140, y + 10), "ragunthan@github: ~/tech-stack", fill=text_gray, font=font_header)
 
-    # Insert prepped image or ASCII text simulation into left box
-    if os.path.exists("data/source-prepped.png"):
-        ascii_img = Image.open("data/source-prepped.png").convert("RGB").resize((380, 520))
-        img.paste(ascii_img, (left_x + 27, y + 50))
+    tech_items = [
+        ("[Programming]", "Java, Python, C, JavaScript, Dart, SQL"),
+        ("[Frontend]", "HTML5, CSS3, React JS, Flutter, Tailwind CSS"),
+        ("[Backend]", "Node.js, Express.js, REST API, JWT"),
+        ("[Database]", "MySQL, MongoDB"),
+        ("[DevOps & Tools]", "Git, GitHub, Jenkins, Docker, Linux, Postman"),
+        ("[Cloud]", "AWS (Basic)"),
+        ("[CS Core]", "DSA, OOP, DBMS, OS, Networks, Web Security"),
+    ]
+
+    ty = y + 45
+    draw.text((left_x + 20, ty), "ragunthan@github:$ cat skills.json", fill=text_blue, font=font_body)
+    ty += 20
+    draw.text((left_x + 20, ty), "-------------------------------------------------", fill=border_color, font=font_body)
+    ty += 22
+
+    for cat, items in tech_items:
+        draw.text((left_x + 20, ty), cat, fill=text_green, font=font_bold)
+        draw.text((left_x + 20, ty + 16), items, fill=text_white, font=font_body)
+        ty += 42
 
     # Right Column: Neofetch Info Card
     right_x = 515
@@ -109,7 +125,6 @@ def render_preview_png():
     draw.ellipse([right_x + 49, y + 12, right_x + 59, y + 22], fill=(27, 201, 63))
     draw.text((right_x + 140, y + 10), "ragunthan@github: ~/neofetch", fill=text_gray, font=font_header)
 
-    # Info card text items
     info_items = [
         ("ragunthan@github", ""),
         ("----------------------------------", ""),
@@ -123,17 +138,18 @@ def render_preview_png():
         ("Learning", "AWS, Kubernetes, CI/CD, Machine Learning"),
     ]
 
-    iy = y + 50
+    iy = y + 45
     for key, val in info_items:
         if val == "":
             if "ragunthan" in key:
-                draw.text((right_x + 25, iy), key, fill=text_blue, font=font_prompt)
+                draw.text((right_x + 20, iy), key, fill=text_blue, font=font_prompt)
             else:
-                draw.text((right_x + 25, iy), key, fill=border_color, font=font_body)
+                draw.text((right_x + 20, iy), key, fill=border_color, font=font_body)
+            iy += 20
         else:
-            draw.text((right_x + 25, iy), f"{key}:", fill=text_gray, font=font_body)
-            draw.text((right_x + 160, iy), val, fill=text_white, font=font_body)
-        iy += 38
+            draw.text((right_x + 20, iy), f"{key}:", fill=text_gray, font=font_body)
+            draw.text((right_x + 150, iy), val, fill=text_white, font=font_body)
+            iy += 32
 
     os.makedirs("assets", exist_ok=True)
     out_path = "assets/preview.png"
