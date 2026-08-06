@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 339" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; rx: 8px; }
+      .border { fill: none; stroke: #30363d; stroke-width: 1.5px; rx: 8px; }
+      .title-bar { fill: #161b22; }
+      .title-text { fill: #8b949e; font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace; font-size: 12px; font-weight: 600; }
+      .window-dot { r: 5px; }
+
+      .prompt-user {
+        font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace;
+        font-size: 14px;
+        font-weight: 700;
+        fill: #58a6ff;
+        opacity: 0;
+        animation: fadeIn 0.3s ease-out forwards;
+      }
+      .prompt-at { fill: #8b949e; }
+      .prompt-sep {
+        font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace;
+        font-size: 12px;
+        fill: #30363d;
+        opacity: 0;
+        animation: fadeIn 0.3s ease-out forwards;
+      }
+      
+      .info-row {
+        opacity: 0;
+        animation: fadeIn 0.35s ease-out forwards;
+      }
+
+      .key-text {
+        font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace;
+        font-size: 12.5px;
+        font-weight: 600;
+        fill: #8b949e;
+      }
+
+      .val-text {
+        font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace;
+        font-size: 12.5px;
+        font-weight: 400;
+        fill: #e6e6e6;
+      }
+
+      @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(3px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </defs>
+
+  <!-- Terminal Window Container -->
+  <rect width="460" height="339" class="bg" />
+  
+  <!-- Terminal Header Bar -->
+  <path d="M 0,8 A 8,8 0 0 1 8,0 L 452,0 A 8,8 0 0 1 460,8 L 460,35 L 0,35 Z" class="title-bar" />
+  <circle cx="18" cy="18" class="window-dot" fill="#ff5f56" />
+  <circle cx="34" cy="18" class="window-dot" fill="#ffbd2e" />
+  <circle cx="50" cy="18" class="window-dot" fill="#27c93f" />
+  <text x="230" y="22" text-anchor="middle" class="title-text">ragunthan@github: ~/neofetch</text>
+
+  <!-- Terminal Border -->
+  <rect width="460" height="339" class="border" />
+
+  <!-- Info Card Content -->
+  <g>
+    <text x="24" y="70" class="prompt-user" style="animation-delay: 0.10s;">ragunthan<tspan class="prompt-at">@</tspan>github</text>
+    <text x="24" y="86" class="prompt-sep" style="animation-delay: 0.20s;">-------------------------------------------------</text>
+    <g class="info-row" style="animation-delay: 0.30s;">
+      <text x="24" y="112" class="key-text">Name:</text>
+      <text x="154" y="112" class="val-text">Ragunthan P R</text>
+    </g>
+    <g class="info-row" style="animation-delay: 0.40s;">
+      <text x="24" y="136" class="key-text">Role:</text>
+      <text x="154" y="136" class="val-text">Computer Science Engineering Student</text>
+    </g>
+    <g class="info-row" style="animation-delay: 0.50s;">
+      <text x="24" y="160" class="key-text">Focus:</text>
+      <text x="154" y="160" class="val-text">AI, Cloud, DevOps, Full Stack, Cyber Security</text>
+    </g>
+    <g class="info-row" style="animation-delay: 0.60s;">
+      <text x="24" y="184" class="key-text">Languages:</text>
+      <text x="154" y="184" class="val-text">Python, Java, C, JavaScript, SQL</text>
+    </g>
+    <g class="info-row" style="animation-delay: 0.70s;">
+      <text x="24" y="208" class="key-text">Frameworks:</text>
+      <text x="154" y="208" class="val-text">React, Node.js, Express, Tailwind CSS</text>
+    </g>
+    <g class="info-row" style="animation-delay: 0.80s;">
+      <text x="24" y="232" class="key-text">Tools:</text>
+      <text x="154" y="232" class="val-text">Git, GitHub, Docker, Linux, VS Code</text>
+    </g>
+    <g class="info-row" style="animation-delay: 0.90s;">
+      <text x="24" y="256" class="key-text">Current Project:</text>
+      <text x="154" y="256" class="val-text">AI Powered GitHub Automation</text>
+    </g>
+    <g class="info-row" style="animation-delay: 1.00s;">
+      <text x="24" y="280" class="key-text">Learning:</text>
+      <text x="154" y="280" class="val-text">AWS, Kubernetes, CI/CD, Machine Learning</text>
+    </g>
+    <g class="info-row" style="animation-delay: 1.10s;">
+      <rect x="24" y="316" width="18" height="12" rx="2" fill="#161b22" /> <rect x="46" y="316" width="18" height="12" rx="2" fill="#30363d" /> <rect x="68" y="316" width="18" height="12" rx="2" fill="#6e7681" /> <rect x="90" y="316" width="18" height="12" rx="2" fill="#8b949e" /> <rect x="112" y="316" width="18" height="12" rx="2" fill="#c9d1d9" /> <rect x="134" y="316" width="18" height="12" rx="2" fill="#f0f6fc" /> <rect x="156" y="316" width="18" height="12" rx="2" fill="#58a6ff" /> <rect x="178" y="316" width="18" height="12" rx="2" fill="#39d353" />
+    </g>
+  </g>
+</svg>

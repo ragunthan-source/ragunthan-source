@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 662" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; rx: 8px; }
+      .border { fill: none; stroke: #30363d; stroke-width: 1.5px; rx: 8px; }
+      .title-bar { fill: #161b22; }
+      .title-text { fill: #8b949e; font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace; font-size: 12px; font-weight: 600; }
+      .window-dot { r: 5px; }
+      
+      .ascii-text {
+        font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace;
+        font-size: 8.8px;
+        fill: #c9d1d9;
+        white-space: pre;
+        letter-spacing: 0px;
+      }
+      
+      .ascii-row {
+        opacity: 0;
+        animation: typeRow 0.04s ease-out forwards;
+      }
+      
+      .cursor {
+        fill: #58a6ff;
+        opacity: 0;
+        animation: cursorBlink 0.8s infinite step-end 2.225s, cursorFade 0.01s forwards 2.225s;
+      }
+      
+      @keyframes typeRow {
+        0% { opacity: 0; transform: translateY(1px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes cursorFade {
+        to { opacity: 1; }
+      }
+
+      @keyframes cursorBlink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <!-- Terminal Window Container -->
+  <rect width="760" height="662" class="bg" />
+  
+  <!-- Terminal Header Bar -->
+  <path d="M 0,8 A 8,8 0 0 1 8,0 L 752,0 A 8,8 0 0 1 760,8 L 760,35 L 0,35 Z" class="title-bar" />
+  <circle cx="18" cy="18" class="window-dot" fill="#ff5f56" />
+  <circle cx="34" cy="18" class="window-dot" fill="#ffbd2e" />
+  <circle cx="50" cy="18" class="window-dot" fill="#27c93f" />
+  <text x="380" y="22" text-anchor="middle" class="title-text">ragunthan@github: ~/ascii-portrait</text>
+
+  <!-- Terminal Border -->
+  <rect width="760" height="662" class="border" />
+
+  <!-- Animated ASCII Content -->
+  <g class="ascii-text">
+    <text x="20" y="60" class="ascii-row row-0" style="animation-delay: 0.2s;">                                                                                                    </text>
+    <text x="20" y="70" class="ascii-row row-1" style="animation-delay: 0.235s;">                                                                                                    </text>
+    <text x="20" y="81" class="ascii-row row-2" style="animation-delay: 0.27s;">                                                                                                    </text>
+    <text x="20" y="91" class="ascii-row row-3" style="animation-delay: 0.305s;">                                                                                                    </text>
+    <text x="20" y="102" class="ascii-row row-4" style="animation-delay: 0.34s;">                                                                                                    </text>
+    <text x="20" y="112" class="ascii-row row-5" style="animation-delay: 0.375s;">                                        .``:--==+++===--::`.                                        </text>
+    <text x="20" y="123" class="ascii-row row-6" style="animation-delay: 0.41s;">                                  `:=*cs###%%%%%%%%%%%%%%%##sc*+-`.                                 </text>
+    <text x="20" y="133" class="ascii-row row-7" style="animation-delay: 0.445s;">                              `-*s#%%%%######################%%%%##c=:                              </text>
+    <text x="20" y="144" class="ascii-row row-8" style="animation-delay: 0.48s;">                            -c#%%##################################%%#s=.                           </text>
+    <text x="20" y="154" class="ascii-row row-9" style="animation-delay: 0.515s;">                          =s%%#########################################%#*.                         </text>
+    <text x="20" y="165" class="ascii-row row-10" style="animation-delay: 0.55s;">                        `s%##############################################%#:                        </text>
+    <text x="20" y="175" class="ascii-row row-11" style="animation-delay: 0.585s;">                       .s%##################################################`                       </text>
+    <text x="20" y="186" class="ascii-row row-12" style="animation-delay: 0.62s;">                       -%##################################################%+                       </text>
+    <text x="20" y="196" class="ascii-row row-13" style="animation-delay: 0.655s;">                       `###################################################%-                       </text>
+    <text x="20" y="207" class="ascii-row row-14" style="animation-delay: 0.69s;">                        -##################################################+                        </text>
+    <text x="20" y="217" class="ascii-row row-15" style="animation-delay: 0.725s;">                       .=*################################################c=`                       </text>
+    <text x="20" y="228" class="ascii-row row-16" style="animation-delay: 0.76s;">                        =%################################################%c                        </text>
+    <text x="20" y="238" class="ascii-row row-17" style="animation-delay: 0.795s;">                         *%######%%%############################%%%#######s.                        </text>
+    <text x="20" y="249" class="ascii-row row-18" style="animation-delay: 0.83s;">                          c%######+*csss#####################sscc+s%######`                         </text>
+    <text x="20" y="259" class="ascii-row row-19" style="animation-delay: 0.865s;">                          .s####%%---=+*ccs##%sssc*sss%%#ssc*+==--s%#####:                          </text>
+    <text x="20" y="270" class="ascii-row row-20" style="animation-delay: 0.9s;">                           -####==++++++===+++:``::```=++===+++++++-s##%+                           </text>
+    <text x="20" y="280" class="ascii-row row-21" style="animation-delay: 0.935s;">                           .=%%+.`............```-````............`.-#%*.                           </text>
+    <text x="20" y="291" class="ascii-row row-22" style="animation-delay: 0.97s;">                            `*c`````````````````:-:`````````````````.+c`.                           </text>
+    <text x="20" y="301" class="ascii-row row-23" style="animation-delay: 1.005s;">                            .:````````````````````````````````````````:`                            </text>
+    <text x="20" y="312" class="ascii-row row-24" style="animation-delay: 1.04s;">                             ```````````.``````````````````.```````````                             </text>
+    <text x="20" y="322" class="ascii-row row-25" style="animation-delay: 1.075s;">                              `:```````:+:`...````````...`:=-```````:`                              </text>
+    <text x="20" y="333" class="ascii-row row-26" style="animation-delay: 1.11s;">                               .````````=**+=-::::::::-==+*=:```````.                               </text>
+    <text x="20" y="343" class="ascii-row row-27" style="animation-delay: 1.145s;">                                 .````````:--=++++++++==-:`.```````                                 </text>
+    <text x="20" y="354" class="ascii-row row-28" style="animation-delay: 1.18s;">                                   .````````....`````...````````.                                   </text>
+    <text x="20" y="364" class="ascii-row row-29" style="animation-delay: 1.215s;">                                      .```````````````````````.                                     </text>
+    <text x="20" y="375" class="ascii-row row-30" style="animation-delay: 1.25s;">                                        ::::````````````::::.                                       </text>
+    <text x="20" y="385" class="ascii-row row-31" style="animation-delay: 1.285s;">                                   .`-=+::::::::::::::::::::++-:.                                   </text>
+    <text x="20" y="396" class="ascii-row row-32" style="animation-delay: 1.32s;">                              .:=*s##%%#-:::::::::::::::::::s%%##sc=:.                              </text>
+    <text x="20" y="406" class="ascii-row row-33" style="animation-delay: 1.355s;">                           `=c##%%######:::::::::::::::::::`c%#####%##c+:.                          </text>
+    <text x="20" y="417" class="ascii-row row-34" style="animation-delay: 1.39s;">                        `+s#%###########ssssssssssssssssssss###########%#s*:                        </text>
+    <text x="20" y="427" class="ascii-row row-35" style="animation-delay: 1.425s;">                     .=c#%###############%%%%%%%%%%%%%%%%%%###############%#s+`                     </text>
+    <text x="20" y="438" class="ascii-row row-36" style="animation-delay: 1.46s;">                   .=s%######################################################%#+`                   </text>
+    <text x="20" y="448" class="ascii-row row-37" style="animation-delay: 1.495s;">                  -s%########################%########%########################%#+                  </text>
+    <text x="20" y="459" class="ascii-row row-38" style="animation-delay: 1.53s;">                .c%###########################%######%###########################%s`                </text>
+    <text x="20" y="469" class="ascii-row row-39" style="animation-delay: 1.565s;">               `s%##############################%##%%###############################-               </text>
+    <text x="20" y="480" class="ascii-row row-40" style="animation-delay: 1.6s;">              :##################################%%#################################%-              </text>
+    <text x="20" y="490" class="ascii-row row-41" style="animation-delay: 1.635s;">             .s#######################################################################:             </text>
+    <text x="20" y="501" class="ascii-row row-42" style="animation-delay: 1.67s;">             *%#######################################################################s             </text>
+    <text x="20" y="511" class="ascii-row row-43" style="animation-delay: 1.705s;">            `#########################################################################%-            </text>
+    <text x="20" y="522" class="ascii-row row-44" style="animation-delay: 1.74s;">            =%#########################################################################*            </text>
+    <text x="20" y="532" class="ascii-row row-45" style="animation-delay: 1.775s;">            +%#########################################################################c            </text>
+    <text x="20" y="543" class="ascii-row row-46" style="animation-delay: 1.81s;">            +%#########################################################################c            </text>
+    <text x="20" y="553" class="ascii-row row-47" style="animation-delay: 1.845s;">            :#########################################################################%+            </text>
+    <text x="20" y="564" class="ascii-row row-48" style="animation-delay: 1.88s;">             c#########################################################################`            </text>
+    <text x="20" y="574" class="ascii-row row-49" style="animation-delay: 1.915s;">             -%######################################################################%+             </text>
+    <text x="20" y="585" class="ascii-row row-50" style="animation-delay: 1.95s;">              +%####################################################################%c              </text>
+    <text x="20" y="595" class="ascii-row row-51" style="animation-delay: 1.985s;">               +%##################################################################%*.              </text>
+    <text x="20" y="606" class="ascii-row row-52" style="animation-delay: 2.02s;">                -#%###############################################################%+                </text>
+    <text x="20" y="616" class="ascii-row row-53" style="animation-delay: 2.055s;">                 `c##############################################################s-                 </text>
+    <text x="20" y="627" class="ascii-row row-54" style="animation-delay: 2.09s;">                   -s###########################################################+.                  </text>
+    <rect x="728" y="619" width="7" height="10" class="cursor" />
+  </g>
+</svg>
