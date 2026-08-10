@@ -25,7 +25,7 @@ RAGUNTHAN P R — DEVELOPER PORTFOLIO README
     <img src="https://img.shields.io/badge/💼%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   &nbsp;
-  <a href="https://leetcode.com/u/ragunthan-source">
+  <a href="https://leetcode.com/u/Ragunthan/">
     <img src="https://img.shields.io/badge/🧩%20LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
   </a>
 </div>
@@ -69,7 +69,7 @@ RAGUNTHAN P R — DEVELOPER PORTFOLIO README
 ## 🧩 LeetCode
 
 <div align="center">
-  <a href="https://leetcode.com/u/ragunthan-source">
+  <a href="https://leetcode.com/u/Ragunthan/">
     <img src="assets/leetcode-card.svg" width="100%" alt="LeetCode Performance Card" />
   </a>
 </div>
@@ -80,33 +80,33 @@ RAGUNTHAN P R — DEVELOPER PORTFOLIO README
   <tr bgcolor="#161b22">
     <td align="center" width="20%" style="padding: 10px; border: 1px solid #30363d;">
       <font color="#8b949e">Problems Solved</font><br />
-      <b>[REPLACE_WITH_NUMBER]</b>
+      <b>21</b>
     </td>
     <td align="center" width="15%" style="padding: 10px; border: 1px solid #30363d;">
       <font color="#2cbb5d">Easy</font><br />
-      <b>[NUMBER]</b>
+      <b>8</b>
     </td>
     <td align="center" width="15%" style="padding: 10px; border: 1px solid #30363d;">
       <font color="#ffb800">Medium</font><br />
-      <b>[NUMBER]</b>
+      <b>11</b>
     </td>
     <td align="center" width="15%" style="padding: 10px; border: 1px solid #30363d;">
       <font color="#ef4743">Hard</font><br />
-      <b>[NUMBER]</b>
+      <b>2</b>
     </td>
     <td align="center" width="17.5%" style="padding: 10px; border: 1px solid #30363d;">
       <font color="#8b949e">Acceptance</font><br />
-      <b>[NUMBER]%</b>
+      <b>68.4%</b>
     </td>
     <td align="center" width="17.5%" style="padding: 10px; border: 1px solid #30363d;">
-      <font color="#ffa116">Contest Rating</font><br />
-      <b>[NUMBER] (Top [NUMBER]%)</b>
+      <font color="#ffa116">Contest Status</font><br />
+      <b>Active</b>
     </td>
   </tr>
 </table>
 
 <div align="right">
-  <a href="https://leetcode.com/">
+  <a href="https://leetcode.com/u/Ragunthan/">
     <font size="2" color="#58a6ff"><b>LeetCode Profile →</b></font>
   </a>
 </div>
@@ -114,53 +114,47 @@ RAGUNTHAN P R — DEVELOPER PORTFOLIO README
 <br />
 <hr stroke="#30363d" />
 
-<!-- SECTION 4: TECH STACK -->
+<!-- SECTION 4: TECH STACK (MERGED TEXT & ICONS) -->
 ## ⚡ Tech Stack
-
-<div align="center">
-  <img src="assets/tech-stack.svg" width="100%" alt="Tech Stack Overview Card" />
-</div>
-
-<br />
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td width="20%" bgcolor="#161b22" style="padding: 12px; border: 1px solid #30363d;">
+    <td width="22%" bgcolor="#161b22" style="padding: 14px; border: 1px solid #30363d;">
       <b>Languages</b>
     </td>
-    <td width="80%" bgcolor="#0d1117" style="padding: 12px; border: 1px solid #30363d;">
+    <td width="78%" bgcolor="#0d1117" style="padding: 14px; border: 1px solid #30363d;">
       <img src="https://skillicons.dev/icons?i=python,java,c,js,mysql" alt="Languages" />
     </td>
   </tr>
   <tr>
-    <td bgcolor="#161b22" style="padding: 12px; border: 1px solid #30363d;">
+    <td bgcolor="#161b22" style="padding: 14px; border: 1px solid #30363d;">
       <b>Frontend</b>
     </td>
-    <td bgcolor="#0d1117" style="padding: 12px; border: 1px solid #30363d;">
+    <td bgcolor="#0d1117" style="padding: 14px; border: 1px solid #30363d;">
       <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind" alt="Frontend" />
     </td>
   </tr>
   <tr>
-    <td bgcolor="#161b22" style="padding: 12px; border: 1px solid #30363d;">
-      <b>Backend & Database</b>
+    <td bgcolor="#161b22" style="padding: 14px; border: 1px solid #30363d;">
+      <b>Backend &amp; Database</b>
     </td>
-    <td bgcolor="#0d1117" style="padding: 12px; border: 1px solid #30363d;">
+    <td bgcolor="#0d1117" style="padding: 14px; border: 1px solid #30363d;">
       <img src="https://skillicons.dev/icons?i=nodejs,express,mysql" alt="Backend & DB" />
     </td>
   </tr>
   <tr>
-    <td bgcolor="#161b22" style="padding: 12px; border: 1px solid #30363d;">
-      <b>DevOps & Cloud</b>
+    <td bgcolor="#161b22" style="padding: 14px; border: 1px solid #30363d;">
+      <b>DevOps &amp; Cloud</b>
     </td>
-    <td bgcolor="#0d1117" style="padding: 12px; border: 1px solid #30363d;">
+    <td bgcolor="#0d1117" style="padding: 14px; border: 1px solid #30363d;">
       <img src="https://skillicons.dev/icons?i=git,github,docker,aws,linux" alt="DevOps & Cloud" />
     </td>
   </tr>
   <tr>
-    <td bgcolor="#161b22" style="padding: 12px; border: 1px solid #30363d;">
+    <td bgcolor="#161b22" style="padding: 14px; border: 1px solid #30363d;">
       <b>Development Tools</b>
     </td>
-    <td bgcolor="#0d1117" style="padding: 12px; border: 1px solid #30363d;">
+    <td bgcolor="#0d1117" style="padding: 14px; border: 1px solid #30363d;">
       <img src="https://skillicons.dev/icons?i=vscode,postman,figma" alt="Tools" />
     </td>
   </tr>
@@ -175,7 +169,7 @@ RAGUNTHAN P R — DEVELOPER PORTFOLIO README
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <!-- Project 1 -->
-    <td width="50%" valign="top" bgcolor="#161b22" style="padding: 16px; border: 1px solid #30363d; border-radius: 8px;">
+    <td width="33.3%" valign="top" bgcolor="#161b22" style="padding: 16px; border: 1px solid #30363d; border-radius: 8px;">
       <h3>🚌 Dynamic QR Bus System</h3>
       <p><font color="#8b949e" size="2">A smart transportation platform using QR technology, real-time bus information, AI-based predictions and passenger safety features.</font></p>
       <p>
@@ -196,8 +190,8 @@ RAGUNTHAN P R — DEVELOPER PORTFOLIO README
     </td>
 
     <!-- Project 2 -->
-    <td width="50%" valign="top" bgcolor="#161b22" style="padding: 16px; border: 1px solid #30363d; border-radius: 8px;">
-      <h3>☁️ Cloud-Based DevOps CI/CD Pipeline</h3>
+    <td width="33.3%" valign="top" bgcolor="#161b22" style="padding: 16px; border: 1px solid #30363d; border-radius: 8px;">
+      <h3>☁️ Cloud DevOps CI/CD Pipeline</h3>
       <p><font color="#8b949e" size="2">Automated application build, testing, containerization and deployment using modern DevOps technologies.</font></p>
       <p>
         <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white" />
@@ -215,30 +209,9 @@ RAGUNTHAN P R — DEVELOPER PORTFOLIO README
         <img src="https://img.shields.io/badge/Demo-Live%20App-3fb950?style=flat-square" />
       </a>
     </td>
-  </tr>
 
-  <tr>
     <!-- Project 3 -->
-    <td width="50%" valign="top" bgcolor="#161b22" style="padding: 16px; border: 1px solid #30363d; border-radius: 8px;">
-      <h3>⚔️ Solo-Leveling Inspired Productivity App</h3>
-      <p><font color="#8b949e" size="2">A gamified productivity system based on quests, XP, levels, achievements and progress tracking.</font></p>
-      <p>
-        <img src="https://img.shields.io/badge/React%20Native-61DAFB?style=flat-square&logo=react&logoColor=black" />
-        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
-        <img src="https://img.shields.io/badge/AI%20Engine-58A6FF?style=flat-square" />
-      </p>
-      <hr stroke="#30363d" />
-      <a href="https://github.com/ragunthan-source">
-        <img src="https://img.shields.io/badge/Code-GitHub-161b22?style=flat-square&logo=github" />
-      </a>
-      &nbsp;
-      <a href="[REPLACE_WITH_DEMO_URL]">
-        <img src="https://img.shields.io/badge/Demo-Live%20App-3fb950?style=flat-square" />
-      </a>
-    </td>
-
-    <!-- Project 4 -->
-    <td width="50%" valign="top" bgcolor="#161b22" style="padding: 16px; border: 1px solid #30363d; border-radius: 8px;">
+    <td width="33.3%" valign="top" bgcolor="#161b22" style="padding: 16px; border: 1px solid #30363d; border-radius: 8px;">
       <h3>✨ [Your Next Project]</h3>
       <p><font color="#8b949e" size="2">Upcoming high-impact software project exploring AI agents, distributed cloud architecture, or intelligent systems.</font></p>
       <p>
@@ -280,27 +253,7 @@ RAGUNTHAN P R — DEVELOPER PORTFOLIO README
 <br />
 <hr stroke="#30363d" />
 
-<!-- SECTION 7: CURRENTLY LEARNING -->
-## 📚 Currently Learning
-
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr bgcolor="#161b22">
-    <td align="center" style="padding: 14px; border: 1px solid #30363d; border-radius: 8px;">
-      <code>☁️ AWS</code> &nbsp;•&nbsp;
-      <code>☸️ Kubernetes</code> &nbsp;•&nbsp;
-      <code>🔄 CI/CD</code> &nbsp;•&nbsp;
-      <code>🤖 Machine Learning</code> &nbsp;•&nbsp;
-      <code>🧠 AI Engineering</code> &nbsp;•&nbsp;
-      <code>🔐 Cyber Security</code> &nbsp;•&nbsp;
-      <code>📊 System Design</code>
-    </td>
-  </tr>
-</table>
-
-<br />
-<hr stroke="#30363d" />
-
-<!-- SECTION 8: WHAT I DO -->
+<!-- SECTION 7: WHAT I DO -->
 ## 💡 What I Do
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -329,35 +282,7 @@ RAGUNTHAN P R — DEVELOPER PORTFOLIO README
 <br />
 <hr stroke="#30363d" />
 
-<!-- SECTION 9: GITHUB / CONTACT -->
-## 🤝 Let's Connect
-
-<div align="center">
-  <a href="https://github.com/ragunthan-source">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  &nbsp;
-  <a href="https://linkedin.com/in/[REPLACE_WITH_LINKEDIN]">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="https://leetcode.com/u/ragunthan-source">
-    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
-  </a>
-  &nbsp;
-  <a href="[REPLACE_WITH_PORTFOLIO_URL]">
-    <img src="https://img.shields.io/badge/Portfolio-58A6FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
-  </a>
-  &nbsp;
-  <a href="mailto:[REPLACE_WITH_EMAIL]">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</div>
-
-<br />
-<hr stroke="#30363d" />
-
-<!-- SECTION 10: FOOTER -->
+<!-- SECTION 8: FOOTER -->
 <div align="center">
   <p><font color="#8b949e"><i>"Build. Learn. Solve. Repeat."</i></font></p>
   <p><font color="#58a6ff" size="2">© 2026 Ragunthan P R</font></p>

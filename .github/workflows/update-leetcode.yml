@@ -28,7 +28,7 @@ jobs:
 
       - name: Fetch LeetCode Data
         run: |
-          python scripts/fetch_leetcode.py ragunthan-source
+          python scripts/fetch_leetcode.py Ragunthan
 
       - name: Render SVG Card
         run: |

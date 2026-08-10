@@ -23,7 +23,7 @@
     <!-- LeetCode Logo Icon -->
     <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.17 5.79a1.374 1.374 0 0 0-.008 1.933l.008.008 3.518 3.55a1.374 1.374 0 0 0 1.94 0 1.374 1.374 0 0 0 0-1.94L9.89 6.58l4.553-4.606a1.374 1.374 0 0 0-.96-1.974zm5.553 4.148a1.374 1.374 0 0 0-.968.411l-9.845 9.94a1.374 1.374 0 0 0 0 1.94l3.52 3.55a1.374 1.374 0 0 0 1.94 0l9.844-9.94a1.374 1.374 0 0 0-.96-2.338z" fill="#ffa116" transform="translate(0, -2) scale(0.9)"/>
     <text x="24" y="14" class="title">LeetCode Performance Dashboard</text>
-    <text x="590" y="14" class="subtitle">leetcode.com/ragunthan-source</text>
+    <text x="610" y="14" class="subtitle">leetcode.com/u/Ragunthan</text>
   </g>
 
   <!-- Divider Line -->
@@ -39,9 +39,9 @@
       <circle cx="0" cy="0" r="54" stroke="#21262d" stroke-width="10" fill="none" />
       <!-- Progress Arc -->
       <circle cx="0" cy="0" r="54" stroke="#ffa116" stroke-width="10" stroke-linecap="round" fill="none"
-              stroke-dasharray="169.6 169.6" transform="rotate(-90)" />
+              stroke-dasharray="71.3 268.0" transform="rotate(-90)" />
       <!-- Central Text -->
-      <text x="0" y="4" text-anchor="middle" class="stat-number">250</text>
+      <text x="0" y="4" text-anchor="middle" class="stat-number">21</text>
       <text x="0" y="20" text-anchor="middle" class="subtitle">Solved</text>
     </g>
 
@@ -51,7 +51,7 @@
       <text x="0" y="18" class="orange-text">68.4%</text>
       
       <text x="0" y="50" class="label">Global Rank</text>
-      <text x="0" y="68" class="value">#125,430</text>
+      <text x="0" y="68" class="value">#4,270,870</text>
     </g>
   </g>
 
@@ -62,25 +62,25 @@
     <!-- Easy Bar -->
     <g transform="translate(20, 24)">
       <text x="0" y="0" class="easy-text">Easy</text>
-      <text x="270" y="0" text-anchor="end" class="value">110</text>
+      <text x="270" y="0" text-anchor="end" class="value">8</text>
       <rect x="0" y="10" width="270" height="8" class="bar-bg" />
-      <rect x="0" y="10" width="35" height="8" fill="#2cbb5d" rx="4" />
+      <rect x="0" y="10" width="13" height="8" fill="#2cbb5d" rx="4" />
     </g>
 
     <!-- Medium Bar -->
     <g transform="translate(20, 64)">
       <text x="0" y="0" class="medium-text">Medium</text>
-      <text x="270" y="0" text-anchor="end" class="value">115</text>
+      <text x="270" y="0" text-anchor="end" class="value">11</text>
       <rect x="0" y="10" width="270" height="8" class="bar-bg" />
-      <rect x="0" y="10" width="18" height="8" fill="#ffb800" rx="4" />
+      <rect x="0" y="10" width="13" height="8" fill="#ffb800" rx="4" />
     </g>
 
     <!-- Hard Bar -->
     <g transform="translate(20, 104)">
       <text x="0" y="0" class="hard-text">Hard</text>
-      <text x="270" y="0" text-anchor="end" class="value">25</text>
+      <text x="270" y="0" text-anchor="end" class="value">2</text>
       <rect x="0" y="10" width="270" height="8" class="bar-bg" />
-      <rect x="0" y="10" width="8" height="8" fill="#ef4743" rx="4" />
+      <rect x="0" y="10" width="13" height="8" fill="#ef4743" rx="4" />
     </g>
   </g>
 

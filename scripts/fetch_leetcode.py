@@ -7,7 +7,7 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__
 OUTPUT_FILE = os.path.join(DATA_DIR, "leetcode_stats.json")
 
 DEFAULT_STATS = {
-    "username": "ragunthan-source",
+    "username": "Ragunthan",
     "solvedTotal": 250,
     "easySolved": 110,
     "mediumSolved": 115,
@@ -22,7 +22,7 @@ DEFAULT_STATS = {
     "topPercentage": 12.5
 }
 
-def fetch_leetcode_stats(username="ragunthan-source"):
+def fetch_leetcode_stats(username="Ragunthan"):
     url = "https://leetcode.com/graphql"
     query = """
     query getUserProfile($username: String!) {
@@ -95,7 +95,7 @@ def fetch_leetcode_stats(username="ragunthan-source"):
     return DEFAULT_STATS
 
 def main():
-    username = sys.argv[1] if len(sys.argv) > 1 else "ragunthan-source"
+    username = sys.argv[1] if len(sys.argv) > 1 else "Ragunthan"
     os.makedirs(DATA_DIR, exist_ok=True)
     
     stats = fetch_leetcode_stats(username)

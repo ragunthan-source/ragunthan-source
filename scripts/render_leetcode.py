@@ -7,40 +7,40 @@ INPUT_FILE = os.path.join(DATA_DIR, "leetcode_stats.json")
 OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "leetcode-card.svg")
 
 DEFAULT_STATS = {
-    "username": "ragunthan-source",
-    "solvedTotal": 250,
-    "easySolved": 110,
-    "mediumSolved": 115,
-    "hardSolved": 25,
+    "username": "Ragunthan",
+    "solvedTotal": 21,
+    "easySolved": 8,
+    "mediumSolved": 11,
+    "hardSolved": 2,
     "totalQuestions": 3300,
     "easyTotal": 820,
     "mediumTotal": 1720,
     "hardTotal": 760,
     "acceptanceRate": 68.4,
-    "ranking": 125430,
+    "ranking": 4270870,
     "contestRating": 1685,
     "topPercentage": 12.5
 }
 
 def generate_svg(stats):
-    solved_total = stats.get("solvedTotal", 250)
-    easy_solved = stats.get("easySolved", 110)
-    medium_solved = stats.get("mediumSolved", 115)
-    hard_solved = stats.get("hardSolved", 25)
+    solved_total = stats.get("solvedTotal", 21)
+    easy_solved = stats.get("easySolved", 8)
+    medium_solved = stats.get("mediumSolved", 11)
+    hard_solved = stats.get("hardSolved", 2)
     acceptance_rate = stats.get("acceptanceRate", 68.4)
-    ranking = stats.get("ranking", 125430)
+    ranking = stats.get("ranking", 4270870)
     contest_rating = stats.get("contestRating", 1685)
     top_pct = stats.get("topPercentage", 12.5)
 
-    easy_pct = min(100, int((easy_solved / 800) * 100)) if easy_solved > 0 else 10
-    medium_pct = min(100, int((medium_solved / 1600) * 100)) if medium_solved > 0 else 10
-    hard_pct = min(100, int((hard_solved / 700) * 100)) if hard_solved > 0 else 10
+    easy_pct = min(100, max(5, int((easy_solved / 800) * 100))) if easy_solved > 0 else 5
+    medium_pct = min(100, max(5, int((medium_solved / 1600) * 100))) if medium_solved > 0 else 5
+    hard_pct = min(100, max(5, int((hard_solved / 700) * 100))) if hard_solved > 0 else 5
 
     # Calculate stroke-dasharray for donut chart
     r = 54
     circumference = 2 * 3.14159 * r # ~339.29
-    # Progress ring ratio based on 500 questions target
-    progress_ratio = min(1.0, solved_total / 500.0)
+    # Progress ring ratio
+    progress_ratio = max(0.05, min(1.0, solved_total / 100.0))
     dash_filled = circumference * progress_ratio
     dash_empty = circumference - dash_filled
 
@@ -69,7 +69,7 @@ def generate_svg(stats):
     <!-- LeetCode Logo Icon -->
     <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.17 5.79a1.374 1.374 0 0 0-.008 1.933l.008.008 3.518 3.55a1.374 1.374 0 0 0 1.94 0 1.374 1.374 0 0 0 0-1.94L9.89 6.58l4.553-4.606a1.374 1.374 0 0 0-.96-1.974zm5.553 4.148a1.374 1.374 0 0 0-.968.411l-9.845 9.94a1.374 1.374 0 0 0 0 1.94l3.52 3.55a1.374 1.374 0 0 0 1.94 0l9.844-9.94a1.374 1.374 0 0 0-.96-2.338z" fill="#ffa116" transform="translate(0, -2) scale(0.9)"/>
     <text x="24" y="14" class="title">LeetCode Performance Dashboard</text>
-    <text x="590" y="14" class="subtitle">leetcode.com/ragunthan-source</text>
+    <text x="610" y="14" class="subtitle">leetcode.com/u/Ragunthan</text>
   </g>
 
   <!-- Divider Line -->
