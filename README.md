@@ -21,7 +21,7 @@ RAGUNTHAN P R — DEVELOPER PORTFOLIO README
     <img src="https://img.shields.io/badge/🐙%20GitHub-161b22?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
   &nbsp;
-  <a href="https://linkedin.com/in/[REPLACE_WITH_LINKEDIN]">
+  <a href="https://www.linkedin.com/in/ragunthan-p-r/">
     <img src="https://img.shields.io/badge/💼%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   &nbsp;
