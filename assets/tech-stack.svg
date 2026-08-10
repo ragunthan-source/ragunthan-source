@@ -1,102 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 401" width="100%" height="100%">
-  <defs>
-    <style>
-      .bg { fill: #0d1117; rx: 8px; }
-      .border { fill: none; stroke: #30363d; stroke-width: 1.5px; rx: 8px; }
-      .title-bar { fill: #161b22; }
-      .title-text { fill: #8b949e; font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace; font-size: 12px; font-weight: 600; }
-      .window-dot { r: 5px; }
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 260" width="100%" height="260" fill="none">
+  <style>
+    .bg { fill: #0d1117; rx: 12px; stroke: #30363d; stroke-width: 1.5; }
+    .card-panel { fill: #161b22; rx: 8px; stroke: #30363d; stroke-width: 1; }
+    .section-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 16px; font-weight: 700; fill: #f0f6fc; }
+    .cat-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: 700; fill: #58a6ff; }
+    .tech-pill { fill: #21262d; rx: 6px; stroke: #30363d; stroke-width: 1; }
+    .tech-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; font-weight: 600; fill: #c9d1d9; }
+    .badge-icon { fill: #8b949e; }
+  </style>
 
-      .prompt-line {
-        font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace;
-        font-size: 12.5px;
-        opacity: 0;
-        animation: fadeIn 0.3s ease-out forwards;
-      }
-      .prompt-user { fill: #58a6ff; font-weight: 700; }
-      .prompt-sep { fill: #30363d; }
+  <!-- Container -->
+  <rect x="0" y="0" width="850" height="260" class="bg" />
 
-      .skill-row {
-        opacity: 0;
-        animation: fadeIn 0.35s ease-out forwards;
-      }
+  <!-- Header -->
+  <g transform="translate(24, 28)">
+    <text x="0" y="0" class="section-title">⚡ Tech Stack &amp; Technologies</text>
+    <line x1="0" y1="14" x2="802" y2="14" stroke="#30363d" stroke-width="1" />
+  </g>
 
-      .cat-text {
-        font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace;
-        font-size: 12px;
-        font-weight: 700;
-        fill: #39d353;
-      }
+  <!-- Content Grid (6 Categories in 2 Rows x 3 Columns) -->
 
-      .item-text {
-        font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace;
-        font-size: 11.5px;
-        font-weight: 400;
-        fill: #e6e6e6;
-      }
+  <!-- Row 1, Col 1: Languages -->
+  <g transform="translate(24, 62)">
+    <rect x="0" y="0" width="254" height="84" class="card-panel" />
+    <text x="14" y="22" class="cat-title">Languages</text>
+    <g transform="translate(14, 34)">
+      <!-- Pills -->
+      <rect x="0" y="0" width="58" height="24" class="tech-pill" />
+      <text x="29" y="16" text-anchor="middle" class="tech-text">Python</text>
 
-      .cursor {
-        fill: #58a6ff;
-        animation: cursorBlink 0.8s infinite step-end;
-      }
+      <rect x="64" y="0" width="48" height="24" class="tech-pill" />
+      <text x="88" y="16" text-anchor="middle" class="tech-text">Java</text>
 
-      @keyframes fadeIn {
-        0% { opacity: 0; transform: translateY(3px); }
-        100% { opacity: 1; transform: translateY(0); }
-      }
+      <rect x="118" y="0" width="34" height="24" class="tech-pill" />
+      <text x="135" y="16" text-anchor="middle" class="tech-text">C</text>
 
-      @keyframes cursorBlink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
-      }
-    </style>
-  </defs>
+      <rect x="158" y="0" width="82" height="24" class="tech-pill" />
+      <text x="199" y="16" text-anchor="middle" class="tech-text">JavaScript</text>
 
-  <!-- Terminal Window Base -->
-  <rect width="460" height="401" class="bg" />
-  
-  <!-- Terminal Header Bar -->
-  <path d="M 0,8 A 8,8 0 0 1 8,0 L 452,0 A 8,8 0 0 1 460,8 L 460,35 L 0,35 Z" class="title-bar" />
-  <circle cx="18" cy="18" class="window-dot" fill="#ff5f56" />
-  <circle cx="34" cy="18" class="window-dot" fill="#ffbd2e" />
-  <circle cx="50" cy="18" class="window-dot" fill="#27c93f" />
-  <text x="230" y="22" text-anchor="middle" class="title-text">ragunthan@github: ~/tech-stack</text>
-
-  <!-- Outer Border -->
-  <rect width="460" height="401" class="border" />
-
-  <!-- Skills Card Content -->
-  <g>
-    <text x="22" y="65" class="prompt-line" style="animation-delay: 0.10s;"><tspan class="prompt-user">ragunthan@github</tspan><tspan class="prompt-sep">:$</tspan> cat skills.json</text>
-    <text x="22" y="79" class="prompt-sep" style="animation-delay: 0.18s;">-------------------------------------------------</text>
-    <g class="skill-row" style="animation-delay: 0.26s;">
-      <text x="22" y="103" class="cat-text">[Programming]</text>
-      <text x="22" y="119" class="item-text">Java, Python, C, JavaScript, Dart, SQL</text>
+      <rect x="0" y="30" width="48" height="24" class="tech-pill" />
+      <text x="24" y="46" text-anchor="middle" class="tech-text">SQL</text>
     </g>
-    <g class="skill-row" style="animation-delay: 0.34s;">
-      <text x="22" y="145" class="cat-text">[Frontend]</text>
-      <text x="22" y="161" class="item-text">HTML5, CSS3, React JS, Flutter, Tailwind CSS</text>
+  </g>
+
+  <!-- Row 1, Col 2: Frontend -->
+  <g transform="translate(298, 62)">
+    <rect x="0" y="0" width="254" height="84" class="card-panel" />
+    <text x="14" y="22" class="cat-title">Frontend</text>
+    <g transform="translate(14, 34)">
+      <rect x="0" y="0" width="52" height="24" class="tech-pill" />
+      <text x="26" y="16" text-anchor="middle" class="tech-text">HTML</text>
+
+      <rect x="58" y="0" width="44" height="24" class="tech-pill" />
+      <text x="80" y="16" text-anchor="middle" class="tech-text">CSS</text>
+
+      <rect x="108" y="0" width="54" height="24" class="tech-pill" />
+      <text x="135" y="16" text-anchor="middle" class="tech-text">React</text>
+
+      <rect x="168" y="0" width="72" height="24" class="tech-pill" />
+      <text x="204" y="16" text-anchor="middle" class="tech-text">Tailwind</text>
     </g>
-    <g class="skill-row" style="animation-delay: 0.42s;">
-      <text x="22" y="187" class="cat-text">[Backend]</text>
-      <text x="22" y="203" class="item-text">Node.js, Express.js, REST API, JWT</text>
+  </g>
+
+  <!-- Row 1, Col 3: Backend & DB -->
+  <g transform="translate(572, 62)">
+    <rect x="0" y="0" width="254" height="84" class="card-panel" />
+    <text x="14" y="22" class="cat-title">Backend &amp; Database</text>
+    <g transform="translate(14, 34)">
+      <rect x="0" y="0" width="66" height="24" class="tech-pill" />
+      <text x="33" y="16" text-anchor="middle" class="tech-text">Node.js</text>
+
+      <rect x="72" y="0" width="76" height="24" class="tech-pill" />
+      <text x="110" y="16" text-anchor="middle" class="tech-text">Express.js</text>
+
+      <rect x="154" y="0" width="58" height="24" class="tech-pill" />
+      <text x="183" y="16" text-anchor="middle" class="tech-text">MySQL</text>
     </g>
-    <g class="skill-row" style="animation-delay: 0.50s;">
-      <text x="22" y="229" class="cat-text">[Database]</text>
-      <text x="22" y="245" class="item-text">MySQL, MongoDB</text>
+  </g>
+
+  <!-- Row 2, Col 1: DevOps & Cloud -->
+  <g transform="translate(24, 158)">
+    <rect x="0" y="0" width="398" height="84" class="card-panel" />
+    <text x="14" y="22" class="cat-title">DevOps &amp; Cloud</text>
+    <g transform="translate(14, 34)">
+      <rect x="0" y="0" width="42" height="24" class="tech-pill" />
+      <text x="21" y="16" text-anchor="middle" class="tech-text">Git</text>
+
+      <rect x="48" y="0" width="62" height="24" class="tech-pill" />
+      <text x="79" y="16" text-anchor="middle" class="tech-text">GitHub</text>
+
+      <rect x="116" y="0" width="60" height="24" class="tech-pill" />
+      <text x="146" y="16" text-anchor="middle" class="tech-text">Docker</text>
+
+      <rect x="182" y="0" width="52" height="24" class="tech-pill" />
+      <text x="208" y="16" text-anchor="middle" class="tech-text">AWS</text>
+
+      <rect x="240" y="0" width="52" height="24" class="tech-pill" />
+      <text x="266" y="16" text-anchor="middle" class="tech-text">Linux</text>
     </g>
-    <g class="skill-row" style="animation-delay: 0.58s;">
-      <text x="22" y="271" class="cat-text">[DevOps &amp; Tools]</text>
-      <text x="22" y="287" class="item-text">Git, GitHub, Jenkins, Docker, Linux, Postman</text>
+  </g>
+
+  <!-- Row 2, Col 2: Development Tools -->
+  <g transform="translate(442, 158)">
+    <rect x="0" y="0" width="384" height="84" class="card-panel" />
+    <text x="14" y="22" class="cat-title">Tools &amp; Environments</text>
+    <g transform="translate(14, 34)">
+      <rect x="0" y="0" width="74" height="24" class="tech-pill" />
+      <text x="37" y="16" text-anchor="middle" class="tech-text">VS Code</text>
+
+      <rect x="80" y="0" width="70" height="24" class="tech-pill" />
+      <text x="115" y="16" text-anchor="middle" class="tech-text">Postman</text>
+
+      <rect x="156" y="0" width="54" height="24" class="tech-pill" />
+      <text x="183" y="16" text-anchor="middle" class="tech-text">Figma</text>
     </g>
-    <g class="skill-row" style="animation-delay: 0.66s;">
-      <text x="22" y="313" class="cat-text">[Cloud]</text>
-      <text x="22" y="329" class="item-text">AWS (Basic)</text>
-    </g>
-    <g class="skill-row" style="animation-delay: 0.74s;">
-      <text x="22" y="355" class="cat-text">[CS Core]</text>
-      <text x="22" y="371" class="item-text">DSA, OOP, DBMS, OS, Networks, Web Security</text>
-    </g>
-    <text x="22" y="403" class="prompt-line" style="animation-delay: 0.82s;"><tspan class="prompt-user">ragunthan@github</tspan><tspan class="prompt-sep">:$</tspan> <tspan class="cursor">█</tspan></text>
   </g>
 </svg>

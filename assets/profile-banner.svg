@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 220" width="100%" height="220" fill="none">
+  <defs>
+    <!-- Dark Gradient Background -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="50%" stop-color="#bc8cff"/>
+      <stop offset="100%" stop-color="#3fb950"/>
+    </linearGradient>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .banner-bg { fill: url(#bg-grad); stroke: #30363d; stroke-width: 1.5; rx: 14px; }
+    .hero-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 32px; font-weight: 800; fill: #f0f6fc; letter-spacing: -0.5px; }
+    .hero-role { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 600; fill: #58a6ff; }
+    .hero-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; fill: #8b949e; }
+    .badge-bg { fill: #21262d; stroke: #30363d; stroke-width: 1; rx: 16px; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; font-weight: 600; fill: #3fb950; }
+    .code-accent { fill: #79c0ff; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 13px; }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect x="0" y="0" width="850" height="220" class="banner-bg" />
+
+  <!-- Top Decorative Accent Bar -->
+  <rect x="24" y="0" width="802" height="4" fill="url(#accent-grad)" rx="2" />
+
+  <!-- Content Container -->
+  <g transform="translate(36, 42)">
+    <!-- Header Greeting -->
+    <text x="0" y="24" class="hero-title">Hi, I'm Ragunthan P R <tspan fill="#58a6ff">👋</tspan></text>
+    
+    <!-- Subtitle / Role -->
+    <text x="0" y="54" class="hero-role">Computer Science Engineering Student</text>
+
+    <!-- Short Description -->
+    <text x="0" y="80" class="hero-desc">Building scalable software, experimenting with AI models, and mastering Cloud &amp; DevOps.</text>
+
+    <!-- Developer Status Line -->
+    <g transform="translate(0, 108)">
+      <rect x="0" y="0" width="310" height="32" class="badge-bg" />
+      <circle cx="16" cy="16" r="4" fill="#3fb950" />
+      <text x="28" y="20" class="badge-text">Open to learning, building &amp; collaborating</text>
+    </g>
+
+    <!-- Code Pill / Quick Tags (Right Side) -->
+    <g transform="translate(560, 10)">
+      <rect x="0" y="0" width="220" height="130" fill="#161b22" rx="10" stroke="#30363d" stroke-width="1" />
+      <text x="16" y="32" class="code-accent">&gt; const dev = {</text>
+      <text x="30" y="54" class="hero-desc">code: <tspan fill="#a5d6ff">["Python", "Java"]</tspan>,</text>
+      <text x="30" y="76" class="hero-desc">focus: <tspan fill="#79c0ff">["AI", "DevOps"]</tspan>,</text>
+      <text x="30" y="98" class="hero-desc">status: <tspan fill="#7ee787">"Building 🚀"</tspan></text>
+      <text x="16" y="118" class="code-accent">};</text>
+    </g>
+  </g>
+</svg>
