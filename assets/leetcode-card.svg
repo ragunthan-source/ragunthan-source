@@ -39,9 +39,9 @@
       <circle cx="0" cy="0" r="54" stroke="#21262d" stroke-width="10" fill="none" />
       <!-- Progress Arc -->
       <circle cx="0" cy="0" r="54" stroke="#ffa116" stroke-width="10" stroke-linecap="round" fill="none"
-              stroke-dasharray="78.0 261.3" transform="rotate(-90)" />
+              stroke-dasharray="88.2 251.1" transform="rotate(-90)" />
       <!-- Central Text -->
-      <text x="0" y="4" text-anchor="middle" class="stat-number">23</text>
+      <text x="0" y="4" text-anchor="middle" class="stat-number">26</text>
       <text x="0" y="20" text-anchor="middle" class="subtitle">Solved</text>
     </g>
 
@@ -51,7 +51,7 @@
       <text x="0" y="18" class="orange-text">68.4%</text>
       
       <text x="0" y="50" class="label">Global Rank</text>
-      <text x="0" y="68" class="value">#4,309,486</text>
+      <text x="0" y="68" class="value">#4,223,492</text>
     </g>
   </g>
 
@@ -62,7 +62,7 @@
     <!-- Easy Bar -->
     <g transform="translate(20, 24)">
       <text x="0" y="0" class="easy-text">Easy</text>
-      <text x="270" y="0" text-anchor="end" class="value">8</text>
+      <text x="270" y="0" text-anchor="end" class="value">11</text>
       <rect x="0" y="10" width="270" height="8" class="bar-bg" />
       <rect x="0" y="10" width="13" height="8" fill="#2cbb5d" rx="4" />
     </g>
