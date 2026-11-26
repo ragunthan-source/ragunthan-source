@@ -35,18 +35,18 @@
     <g transform="translate(70, 72)">
       <circle cx="0" cy="0" r="46" stroke="#21262d" stroke-width="9" fill="none" />
       <circle cx="0" cy="0" r="46" stroke="#ffa116" stroke-width="9" stroke-linecap="round" fill="none"
-              stroke-dasharray="135.8 153.2" transform="rotate(-90)" />
-      <text x="0" y="8" text-anchor="middle" class="big-stat">47</text>
+              stroke-dasharray="147.4 141.6" transform="rotate(-90)" />
+      <text x="0" y="8" text-anchor="middle" class="big-stat">51</text>
       <text x="0" y="26" text-anchor="middle" class="sub-stat">SOLVED</text>
     </g>
 
     <!-- Stat Highlights on Right -->
     <g transform="translate(148, 34)">
       <text x="0" y="0" class="meta-key">Acceptance</text>
-      <text x="0" y="22" class="orange-val">74.3%</text>
+      <text x="0" y="22" class="orange-val">74.4%</text>
 
       <text x="0" y="52" class="meta-key">Global Rank</text>
-      <text x="0" y="74" class="meta-val">#2,980,549</text>
+      <text x="0" y="74" class="meta-val">#2,787,017</text>
     </g>
   </g>
 
@@ -57,7 +57,7 @@
     <!-- Easy Bar -->
     <g transform="translate(25, 28)">
       <text x="0" y="0" class="diff-lbl" fill="#2cbb5d">Easy</text>
-      <text x="310" y="0" text-anchor="end" class="meta-val">15 <tspan fill="#8b949e" font-weight="500" font-size="12">/ 820</tspan></text>
+      <text x="310" y="0" text-anchor="end" class="meta-val">17 <tspan fill="#8b949e" font-weight="500" font-size="12">/ 820</tspan></text>
       <rect x="0" y="8" width="310" height="8" class="bar-bg" />
       <rect x="0" y="8" width="15" height="8" fill="#2cbb5d" rx="4" />
     </g>
@@ -65,7 +65,7 @@
     <!-- Medium Bar -->
     <g transform="translate(25, 66)">
       <text x="0" y="0" class="diff-lbl" fill="#ffb800">Medium</text>
-      <text x="310" y="0" text-anchor="end" class="meta-val">28 <tspan fill="#8b949e" font-weight="500" font-size="12">/ 1720</tspan></text>
+      <text x="310" y="0" text-anchor="end" class="meta-val">29 <tspan fill="#8b949e" font-weight="500" font-size="12">/ 1720</tspan></text>
       <rect x="0" y="8" width="310" height="8" class="bar-bg" />
       <rect x="0" y="8" width="15" height="8" fill="#ffb800" rx="4" />
     </g>
@@ -73,7 +73,7 @@
     <!-- Hard Bar -->
     <g transform="translate(25, 104)">
       <text x="0" y="0" class="diff-lbl" fill="#ef4743">Hard</text>
-      <text x="310" y="0" text-anchor="end" class="meta-val">4 <tspan fill="#8b949e" font-weight="500" font-size="12">/ 760</tspan></text>
+      <text x="310" y="0" text-anchor="end" class="meta-val">5 <tspan fill="#8b949e" font-weight="500" font-size="12">/ 760</tspan></text>
       <rect x="0" y="8" width="310" height="8" class="bar-bg" />
       <rect x="0" y="8" width="15" height="8" fill="#ef4743" rx="4" />
     </g>
