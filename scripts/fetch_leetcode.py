@@ -8,16 +8,16 @@ OUTPUT_FILE = os.path.join(DATA_DIR, "leetcode_stats.json")
 
 DEFAULT_STATS = {
     "username": "Ragunthan",
-    "solvedTotal": 250,
-    "easySolved": 110,
-    "mediumSolved": 115,
-    "hardSolved": 25,
+    "solvedTotal": 47,
+    "easySolved": 15,
+    "mediumSolved": 28,
+    "hardSolved": 4,
     "totalQuestions": 3300,
     "easyTotal": 820,
     "mediumTotal": 1720,
     "hardTotal": 760,
-    "acceptanceRate": 68.4,
-    "ranking": 125430,
+    "acceptanceRate": 74.3,
+    "ranking": 2980549,
     "contestRating": 1685,
     "topPercentage": 12.5
 }
@@ -30,6 +30,11 @@ def fetch_leetcode_stats(username="Ragunthan"):
         username
         submitStatsGlobal {
           acSubmissionNum {
+            difficulty
+            count
+            submissions
+          }
+          totalSubmissionNum {
             difficulty
             count
             submissions
@@ -54,28 +59,41 @@ def fetch_leetcode_stats(username="Ragunthan"):
     }
 
     try:
-        response = requests.post(url, json={"query": query, "variables": {"username": username}}, headers=headers, timeout=10)
+        response = requests.post(url, json={"query": query, "variables": {"username": username}}, headers=headers, timeout=12)
         if response.status_code == 200:
             data = response.json()
             user = data.get("data", {}).get("matchedUser")
             if user:
                 stats = dict(DEFAULT_STATS)
                 stats["username"] = username
-                ac_submissions = user.get("submitStatsGlobal", {}).get("acSubmissionNum", [])
                 
-                total_solved = 0
+                submit_stats = user.get("submitStatsGlobal", {})
+                ac_submissions = submit_stats.get("acSubmissionNum", [])
+                total_submissions_list = submit_stats.get("totalSubmissionNum", [])
+                
+                total_ac_subs = 0
                 for item in ac_submissions:
                     diff = item.get("difficulty")
                     cnt = item.get("count", 0)
+                    subs = item.get("submissions", 0)
                     if diff == "All":
                         stats["solvedTotal"] = cnt
-                        total_solved = cnt
+                        total_ac_subs = subs
                     elif diff == "Easy":
                         stats["easySolved"] = cnt
                     elif diff == "Medium":
                         stats["mediumSolved"] = cnt
                     elif diff == "Hard":
                         stats["hardSolved"] = cnt
+                
+                total_all_subs = 0
+                for item in total_submissions_list:
+                    if item.get("difficulty") == "All":
+                        total_all_subs = item.get("submissions", 0)
+                        break
+                
+                if total_all_subs > 0 and total_ac_subs > 0:
+                    stats["acceptanceRate"] = round((total_ac_subs / total_all_subs) * 100, 1)
                 
                 profile = user.get("profile", {})
                 if profile and profile.get("ranking"):
@@ -103,7 +121,7 @@ def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(stats, f, indent=2)
     
-    print(f"LeetCode statistics saved to {OUTPUT_FILE}")
+    print(f"LeetCode statistics saved to {OUTPUT_FILE}: {stats['solvedTotal']} solved (Easy: {stats['easySolved']}, Med: {stats['mediumSolved']}, Hard: {stats['hardSolved']}), Acceptance: {stats['acceptanceRate']}%, Ranking: {stats['ranking']}")
 
 if __name__ == "__main__":
     main()

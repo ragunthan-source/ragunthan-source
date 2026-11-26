@@ -2,8 +2,8 @@ name: Update LeetCode Dashboard Card
 
 on:
   schedule:
-    # Run daily at 00:00 UTC
-    - cron: '0 0 * * *'
+    # Run every 4 hours to keep problem solving metrics freshly updated
+    - cron: '0 */4 * * *'
   workflow_dispatch:
 
 permissions:
