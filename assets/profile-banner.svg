@@ -1,96 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 170" width="100%" height="170" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 135" width="100%" height="135" fill="none">
   <defs>
     <!-- Background Gradient -->
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0d14"/>
-      <stop offset="100%" stop-color="#141923"/>
+    <linearGradient id="banner-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913"/>
+      <stop offset="50%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#060913"/>
     </linearGradient>
 
-    <!-- Top Accent Gradient -->
-    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8"/>
+    <!-- Top Accent Line -->
+    <linearGradient id="accent-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2"/>
+      <stop offset="30%" stop-color="#38bdf8"/>
       <stop offset="50%" stop-color="#818cf8"/>
-      <stop offset="100%" stop-color="#34d399"/>
+      <stop offset="70%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0.2"/>
     </linearGradient>
 
-    <!-- Grid Pattern -->
-    <pattern id="infra-grid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#212836" stroke-width="0.6" stroke-opacity="0.35"/>
-    </pattern>
+    <!-- Subtle Radial Glow -->
+    <radialGradient id="center-glow" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#060913" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
   <style>
-    .banner-bg { fill: url(#bg-grad); stroke: #262f3f; stroke-width: 1.2; rx: 12px; }
-    .hero-name { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 800; fill: #f8fafc; letter-spacing: 0.5px; }
-    .hero-role { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; fill: #38bdf8; letter-spacing: 1.8px; text-transform: uppercase; }
-    .hero-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; fill: #94a3b8; }
-    .status-chip { fill: #111827; stroke: #1f2937; stroke-width: 1; rx: 14px; }
-    .status-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 600; fill: #34d399; }
-    
-    .panel-box { fill: #0f172a; stroke: #1e293b; stroke-width: 1; rx: 8px; }
-    .panel-header { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 10px; font-weight: 700; fill: #64748b; letter-spacing: 1.2px; }
-    .metric-key { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 10px; font-weight: 700; fill: #38bdf8; }
-    .metric-val { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 500; fill: #cbd5e1; }
-    .metric-status { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 10px; font-weight: 700; fill: #34d399; }
+    .bg { fill: url(#banner-bg); stroke: #1e293b; stroke-width: 1.2; rx: 14px; }
+    .title-role { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; fill: #38bdf8; letter-spacing: 3px; text-transform: uppercase; }
+    .title-name { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 26px; font-weight: 800; fill: #f8fafc; letter-spacing: 1.5px; }
+    .title-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #94a3b8; letter-spacing: 0.5px; }
+    .status-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; font-weight: 600; fill: #34d399; }
   </style>
 
   <!-- Background Base -->
-  <rect x="0" y="0" width="850" height="170" class="banner-bg" />
-  <rect x="0" y="0" width="850" height="170" fill="url(#infra-grid)" rx="12" />
+  <rect x="0" y="0" width="800" height="135" class="bg" />
+  <rect x="0" y="0" width="800" height="135" fill="url(#center-glow)" rx="14" />
 
-  <!-- Top Decorative Accent Bar -->
-  <rect x="20" y="0" width="810" height="3" fill="url(#accent-grad)" rx="1.5" />
+  <!-- Top Accent Bar -->
+  <rect x="40" y="0" width="720" height="2" fill="url(#accent-line)" rx="1" />
 
-  <!-- Left Column: Primary Identity -->
-  <g transform="translate(36, 32)">
+  <!-- Centered Content Group -->
+  <g transform="translate(400, 32)" text-anchor="middle">
     <!-- Role Subtitle -->
-    <text x="0" y="14" class="hero-role">Cloud · Networking · DevOps Engineer</text>
+    <text x="0" y="0" class="title-role">Cloud · Networking · DevOps</text>
 
-    <!-- Engineer Name -->
-    <text x="0" y="44" class="hero-name">RAGUNTHAN P R</text>
+    <!-- Name Header -->
+    <text x="0" y="32" class="title-name">RAGUNTHAN P R</text>
 
-    <!-- Focus Description -->
-    <text x="0" y="70" class="hero-desc">Architecting scalable cloud infrastructure, secure networks &amp; automated pipelines.</text>
+    <!-- Tagline Description -->
+    <text x="0" y="56" class="title-desc">Resilient Infrastructure · High-Throughput Networks · Automated CI/CD</text>
 
-    <!-- Operational Status Chip -->
-    <g transform="translate(0, 88)">
-      <rect x="0" y="0" width="280" height="26" class="status-chip" />
-      <circle cx="13" cy="13" r="3.5" fill="#34d399" />
-      <text x="24" y="17" class="status-text">Production Infrastructure &amp; CI/CD Active</text>
-    </g>
-  </g>
-
-  <!-- Right Column: Infrastructure Telemetry Panel -->
-  <g transform="translate(540, 26)">
-    <rect x="0" y="0" width="274" height="118" class="panel-box" />
-
-    <!-- Panel Header -->
-    <g transform="translate(14, 18)">
-      <circle cx="2" cy="0" r="2.5" fill="#38bdf8" />
-      <text x="12" y="3" class="panel-header">INFRASTRUCTURE TELEMETRY</text>
-    </g>
-
-    <line x1="14" y1="28" x2="260" y2="28" stroke="#1e293b" stroke-width="1" />
-
-    <!-- Telemetry Metrics -->
-    <g transform="translate(14, 46)">
-      <text x="0" y="0" class="metric-key">[CLOUD]</text>
-      <text x="66" y="0" class="metric-val">AWS · Docker · Kubernetes</text>
-    </g>
-
-    <g transform="translate(14, 68)">
-      <text x="0" y="0" class="metric-key">[NETWORK]</text>
-      <text x="66" y="0" class="metric-val">VPC · DNS · Subnets · NGINX</text>
-    </g>
-
-    <g transform="translate(14, 90)">
-      <text x="0" y="0" class="metric-key">[DEVOPS]</text>
-      <text x="66" y="0" class="metric-val">Linux · CI/CD · Automation</text>
-    </g>
-
-    <g transform="translate(14, 108)">
-      <text x="0" y="0" class="metric-header" font-size="9" fill="#475569">STATUS:</text>
-      <text x="48" y="0" class="metric-status">● ALL SYSTEMS NOMINAL</text>
+    <!-- Subtle Live Status -->
+    <g transform="translate(0, 78)">
+      <circle cx="-100" cy="-3" r="3" fill="#34d399" />
+      <text x="0" y="0" class="status-text">Production Systems &amp; Automation Active</text>
     </g>
   </g>
 </svg>
