@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 150" width="100%" height="150" fill="none">
+  <defs>
+    <!-- Seamless Gradient Line -->
+    <linearGradient id="horizon-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#38bdf8" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#34d399" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Ambient Center Light -->
+    <radialGradient id="center-light" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    .role-txt { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: 700; fill: #38bdf8; letter-spacing: 3.5px; text-transform: uppercase; }
+    .name-txt { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 36px; font-weight: 800; fill: #f0f6fc; letter-spacing: 2px; }
+    .tagline-txt { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13.5px; font-weight: 400; fill: #8b949e; letter-spacing: 0.3px; }
+    .status-pill { fill: #161b22; stroke: #30363d; stroke-width: 1; rx: 14px; }
+    .status-lbl { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 600; fill: #3fb950; }
+  </style>
+
+  <!-- Transparent Canvas (Zero box, 100% blends into GitHub background) -->
+  <rect x="0" y="0" width="850" height="150" fill="none" />
+  <ellipse cx="425" cy="65" rx="350" ry="55" fill="url(#center-light)" />
+
+  <!-- Top Accent Horizon Line -->
+  <line x1="70" y1="2" x2="780" y2="2" stroke="url(#horizon-glow)" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Centered Content -->
+  <g transform="translate(425, 32)" text-anchor="middle">
+    <!-- Role Subtitle -->
+    <text x="0" y="0" class="role-txt">Cloud · Networking · DevOps</text>
+
+    <!-- Name Header -->
+    <text x="0" y="40" class="name-txt">RAGUNTHAN P R</text>
+
+    <!-- Tagline Description -->
+    <text x="0" y="68" class="tagline-txt">Architecting Resilient Infrastructure · High-Throughput Networks · Automated CI/CD</text>
+
+    <!-- Operational Status Pill -->
+    <g transform="translate(0, 88)">
+      <rect x="-145" y="0" width="290" height="28" class="status-pill" />
+      <circle cx="-125" cy="14" r="3.5" fill="#3fb950" />
+      <text x="8" y="18" text-anchor="middle" class="status-lbl">Production Infrastructure &amp; Automation Active</text>
+    </g>
+  </g>
+</svg>

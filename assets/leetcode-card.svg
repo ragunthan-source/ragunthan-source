@@ -1,101 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 195" width="100%" height="195" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 205" width="100%" height="205" fill="none">
   <style>
     .panel-box { fill: #161b22; rx: 12px; stroke: #30363d; stroke-width: 1; }
-    .head-lbl { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 700; fill: #8b949e; letter-spacing: 1.5px; text-transform: uppercase; }
-    .head-link { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 11px; fill: #38bdf8; }
-    .big-stat { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 800; fill: #f0f6fc; }
-    .sub-stat { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; font-weight: 700; fill: #8b949e; letter-spacing: 1px; }
-    .meta-key { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 600; fill: #8b949e; }
-    .meta-val { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 16px; font-weight: 700; fill: #f0f6fc; }
-    .orange-val { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 16px; font-weight: 700; fill: #ffa116; }
-    .diff-lbl { font-family: sans-serif; font-size: 13px; font-weight: 700; }
-    .bar-bg { fill: #21262d; rx: 3.5px; }
-    .rating-num { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 34px; font-weight: 800; fill: #ffa116; }
-    .standing-val { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: 700; fill: #38bdf8; }
+    .head-lbl { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; font-weight: 700; fill: #8b949e; letter-spacing: 1.5px; text-transform: uppercase; }
+    .head-link { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 12px; fill: #38bdf8; }
+    .big-stat { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 36px; font-weight: 800; fill: #f0f6fc; }
+    .sub-stat { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 700; fill: #8b949e; letter-spacing: 1px; }
+    .meta-key { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; font-weight: 600; fill: #8b949e; }
+    .meta-val { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 17px; font-weight: 700; fill: #f0f6fc; }
+    .orange-val { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 700; fill: #ffa116; }
+    .diff-lbl { font-family: sans-serif; font-size: 14px; font-weight: 700; }
+    .bar-bg { fill: #21262d; rx: 4px; }
+    .rating-num { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 38px; font-weight: 800; fill: #ffa116; }
+    .standing-val { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; font-weight: 700; fill: #38bdf8; }
     .active-badge { font-family: sans-serif; font-size: 11px; font-weight: 600; fill: #3fb950; }
   </style>
 
-  <!-- Transparent Background Canvas -->
-  <rect x="0" y="0" width="850" height="195" fill="none" />
+  <!-- Transparent Background Canvas (Blends seamlessly with GitHub) -->
+  <rect x="0" y="0" width="850" height="205" fill="none" />
 
   <!-- Header Strip -->
-  <g transform="translate(0, 18)">
-    <path d="M11.235 0a1.145 1.145 0 0 0-.8.365L5.975 4.825a1.145 1.145 0 0 0-.007 1.61l.007.007 2.932 2.958a1.145 1.145 0 0 0 1.616 0 1.145 1.145 0 0 0 0-1.616L8.242 5.483l3.794-3.838a1.145 1.145 0 0 0-.8-1.645zm4.628 3.457a1.145 1.145 0 0 0-.807.342L6.85 12.08a1.145 1.145 0 0 0 0 1.617l2.933 2.958a1.145 1.145 0 0 0 1.617 0l8.203-8.283a1.145 1.145 0 0 0-.8-1.948z" fill="#ffa116" transform="translate(0, -3) scale(0.9)"/>
-    <text x="22" y="10" class="head-lbl">PROBLEM SOLVING &amp; ALGORITHMIC PERFORMANCE</text>
+  <g transform="translate(0, 20)">
+    <path d="M11.235 0a1.145 1.145 0 0 0-.8.365L5.975 4.825a1.145 1.145 0 0 0-.007 1.61l.007.007 2.932 2.958a1.145 1.145 0 0 0 1.616 0 1.145 1.145 0 0 0 0-1.616L8.242 5.483l3.794-3.838a1.145 1.145 0 0 0-.8-1.645zm4.628 3.457a1.145 1.145 0 0 0-.807.342L6.85 12.08a1.145 1.145 0 0 0 0 1.617l2.933 2.958a1.145 1.145 0 0 0 1.617 0l8.203-8.283a1.145 1.145 0 0 0-.8-1.948z" fill="#ffa116" transform="translate(0, -3) scale(0.95)"/>
+    <text x="24" y="10" class="head-lbl">PROBLEM SOLVING &amp; ALGORITHMIC PERFORMANCE</text>
     <text x="850" y="10" text-anchor="end" class="head-link">leetcode.com/u/Ragunthan →</text>
   </g>
 
-  <line x1="0" y1="34" x2="850" y2="34" stroke="#21262d" stroke-width="1" />
+  <line x1="0" y1="36" x2="850" y2="36" stroke="#21262d" stroke-width="1" />
 
   <!-- Panel 1: Donut Gauge & Solved Total -->
-  <g transform="translate(0, 46)">
-    <rect x="0" y="0" width="250" height="138" class="panel-box" />
+  <g transform="translate(0, 48)">
+    <rect x="0" y="0" width="250" height="145" class="panel-box" />
 
     <!-- Donut Ring -->
-    <g transform="translate(72, 69)">
-      <circle cx="0" cy="0" r="44" stroke="#21262d" stroke-width="8" fill="none" />
-      <circle cx="0" cy="0" r="44" stroke="#ffa116" stroke-width="8" stroke-linecap="round" fill="none"
-              stroke-dasharray="129.9 146.5" transform="rotate(-90)" />
+    <g transform="translate(70, 72)">
+      <circle cx="0" cy="0" r="46" stroke="#21262d" stroke-width="9" fill="none" />
+      <circle cx="0" cy="0" r="46" stroke="#ffa116" stroke-width="9" stroke-linecap="round" fill="none"
+              stroke-dasharray="135.8 153.2" transform="rotate(-90)" />
       <text x="0" y="8" text-anchor="middle" class="big-stat">47</text>
-      <text x="0" y="24" text-anchor="middle" class="sub-stat">SOLVED</text>
+      <text x="0" y="26" text-anchor="middle" class="sub-stat">SOLVED</text>
     </g>
 
     <!-- Stat Highlights on Right -->
-    <g transform="translate(148, 30)">
+    <g transform="translate(148, 34)">
       <text x="0" y="0" class="meta-key">Acceptance</text>
-      <text x="0" y="20" class="orange-val">74.3%</text>
+      <text x="0" y="22" class="orange-val">74.3%</text>
 
-      <text x="0" y="48" class="meta-key">Global Rank</text>
-      <text x="0" y="68" class="meta-val">#2,980,549</text>
+      <text x="0" y="52" class="meta-key">Global Rank</text>
+      <text x="0" y="74" class="meta-val">#2,980,549</text>
     </g>
   </g>
 
   <!-- Panel 2: Difficulty Breakdown -->
-  <g transform="translate(265, 46)">
-    <rect x="0" y="0" width="365" height="138" class="panel-box" />
+  <g transform="translate(265, 48)">
+    <rect x="0" y="0" width="365" height="145" class="panel-box" />
 
     <!-- Easy Bar -->
-    <g transform="translate(25, 26)">
+    <g transform="translate(25, 28)">
       <text x="0" y="0" class="diff-lbl" fill="#2cbb5d">Easy</text>
-      <text x="315" y="0" text-anchor="end" class="meta-val">15 <tspan fill="#8b949e" font-weight="500" font-size="12">/ 820</tspan></text>
-      <rect x="0" y="8" width="315" height="7" class="bar-bg" />
-      <rect x="0" y="8" width="15" height="7" fill="#2cbb5d" rx="3.5" />
+      <text x="310" y="0" text-anchor="end" class="meta-val">15 <tspan fill="#8b949e" font-weight="500" font-size="12">/ 820</tspan></text>
+      <rect x="0" y="8" width="310" height="8" class="bar-bg" />
+      <rect x="0" y="8" width="15" height="8" fill="#2cbb5d" rx="4" />
     </g>
 
     <!-- Medium Bar -->
-    <g transform="translate(25, 62)">
+    <g transform="translate(25, 66)">
       <text x="0" y="0" class="diff-lbl" fill="#ffb800">Medium</text>
-      <text x="315" y="0" text-anchor="end" class="meta-val">28 <tspan fill="#8b949e" font-weight="500" font-size="12">/ 1720</tspan></text>
-      <rect x="0" y="8" width="315" height="7" class="bar-bg" />
-      <rect x="0" y="8" width="15" height="7" fill="#ffb800" rx="3.5" />
+      <text x="310" y="0" text-anchor="end" class="meta-val">28 <tspan fill="#8b949e" font-weight="500" font-size="12">/ 1720</tspan></text>
+      <rect x="0" y="8" width="310" height="8" class="bar-bg" />
+      <rect x="0" y="8" width="15" height="8" fill="#ffb800" rx="4" />
     </g>
 
     <!-- Hard Bar -->
-    <g transform="translate(25, 98)">
+    <g transform="translate(25, 104)">
       <text x="0" y="0" class="diff-lbl" fill="#ef4743">Hard</text>
-      <text x="315" y="0" text-anchor="end" class="meta-val">4 <tspan fill="#8b949e" font-weight="500" font-size="12">/ 760</tspan></text>
-      <rect x="0" y="8" width="315" height="7" class="bar-bg" />
-      <rect x="0" y="8" width="15" height="7" fill="#ef4743" rx="3.5" />
+      <text x="310" y="0" text-anchor="end" class="meta-val">4 <tspan fill="#8b949e" font-weight="500" font-size="12">/ 760</tspan></text>
+      <rect x="0" y="8" width="310" height="8" class="bar-bg" />
+      <rect x="0" y="8" width="15" height="8" fill="#ef4743" rx="4" />
     </g>
   </g>
 
   <!-- Panel 3: Contest Rating & Standing -->
-  <g transform="translate(645, 46)">
-    <rect x="0" y="0" width="205" height="138" class="panel-box" />
+  <g transform="translate(645, 48)">
+    <rect x="0" y="0" width="205" height="145" class="panel-box" />
 
-    <g transform="translate(22, 28)">
+    <g transform="translate(22, 30)">
       <text x="0" y="0" class="meta-key">CONTEST RATING</text>
-      <text x="0" y="32" class="rating-num">1685</text>
+      <text x="0" y="34" class="rating-num">1685</text>
     </g>
 
-    <line x1="22" y1="74" x2="183" y2="74" stroke="#30363d" stroke-width="1" />
+    <line x1="22" y1="78" x2="183" y2="78" stroke="#30363d" stroke-width="1" />
 
-    <g transform="translate(22, 98)">
+    <g transform="translate(22, 102)">
       <text x="0" y="0" class="meta-key">Standing:</text>
       <text x="56" y="0" class="standing-val">Top 12.5%</text>
 
-      <circle cx="4" cy="18" r="3.5" fill="#3fb950" />
-      <text x="14" y="22" class="active-badge">Active Contestant</text>
+      <circle cx="4" cy="20" r="3.5" fill="#3fb950" />
+      <text x="14" y="24" class="active-badge">Active Contestant</text>
     </g>
   </g>
 </svg>

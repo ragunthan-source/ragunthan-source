@@ -2,7 +2,7 @@
 
   <!-- HERO BANNER -->
   <a href="https://ragunthan-portfolio-11b92.web.app/">
-    <img src="assets/banner.svg" width="100%" alt="Ragunthan P R — Cloud, Networking & DevOps Engineer" />
+    <img src="assets/hero-banner.svg" width="100%" alt="Ragunthan P R — Cloud, Networking & DevOps Engineer" />
   </a>
 
   <br /><br />
@@ -24,7 +24,7 @@
 
   <!-- PROBLEM SOLVING & LEETCODE PERFORMANCE -->
   <a href="https://leetcode.com/u/Ragunthan/">
-    <img src="assets/leetcode.svg" width="100%" alt="Ragunthan P R — LeetCode Metrics & Problem Solving" />
+    <img src="assets/leetcode-dashboard.svg" width="100%" alt="Ragunthan P R — LeetCode Metrics & Problem Solving" />
   </a>
 
   <br /><br />
